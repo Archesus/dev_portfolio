@@ -68,8 +68,10 @@ const Page = () => {
                     duration: 0.5,
                     ease: "easeInOut"
                 }}
+                className='mb-10 md:mb-20'
             >
                 <h1 className='text-purple-gradient font-afacad font-bold text-[75px]'>Gallery</h1>
+                <p className="font-inter font-normal text-lg tracking-wide">A collection of my <span className='italic font-medium uppercase'>sketches</span> and <span className='italic font-medium uppercase'>graphic design</span> works</p>
             </motion.div>
 
             <motion.div
