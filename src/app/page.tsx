@@ -293,7 +293,7 @@ export default function Home() {
         <div><h2 className="text-5xl font-afacad font-bold md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-black to-[#250041]">About.</h2></div>
 
         <motion.div
-          className="grid md:grid-cols-3 auto-rows-[200px] lg:auto-rows-[308px] gap-2 md:gap-4 my-5 md:my-10">
+          className="grid md:grid-cols-3 auto-rows-[225px] lg:auto-rows-[308px] gap-2 md:gap-4 my-5 md:my-10">
           <motion.div
             initial={{ opacity: 0.7, y: "10%" }}
             whileInView={{ opacity: 1, y: "0%" }}
