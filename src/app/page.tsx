@@ -119,7 +119,7 @@ export default function Home() {
               <a className="text-neutral-100 tracking-wide font-normal h-full w-[100px] md:w-[200px] block relative linear-mask" href="https://www.linkedin.com/in/anurag-kumar-301243269/" target='_blank'>
                 Let&apos;s Connect
               </a>
-              <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
+              <span className="block absolute inset-0 rounded-md p-px linear-overlay pointer-events-none" />
             </motion.button>
           </motion.div>
 
