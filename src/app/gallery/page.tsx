@@ -39,10 +39,21 @@ const Page = () => {
         { src: "/potrait-1.jpg", alt: "potrait" },
         { src: "/potrait-3.jpg", alt: "potrait" },
         { src: "/spiderman.jpg", alt: "spiderman" },
+        { src: "/shape.png", alt: "abstract shape" },
+        { src: "/poster1.png", alt: "poster", className: 'row-span-2' },
+        { src: "/poster2.png", alt: "poster", },
+        { src: "/poster3.png", alt: "poster", className: 'row-span-2' },
+        { src: "/poster4.png", alt: "poster", },
+        { src: "/poster5.png", alt: "poster", },
+        { src: "/poster6.png", alt: "poster", },
+        { src: "/poster7.png", alt: "poster", className: 'row-span-2 md:row-span-3 md:col-span-2' },
+        { src: "/poster8.png", alt: "poster", },
+        { src: "/poster9.png", alt: "poster", },
+        { src: "/poster10.png", alt: "poster", },
     ];
 
     return <>
-        <div className='max-container mx-auto my-10 md:my-20 h-fit w-full px-5 md:px-10'>
+        <div className='max-container mx-auto my-10 md:my-20 md:mb-40 h-fit w-full px-5 md:px-10'>
             <motion.div
                 initial={{
                     opacity: 0,
@@ -79,7 +90,7 @@ const Page = () => {
                 {images.map((image, index) => (
                     <div
                         key={index}
-                        className={`bg-gray-200 shadow-sm rounded-xl relative overflow-hidden ${image.className || ''}`}
+                        className={`bg-gray-200 shadow-md rounded-xl relative overflow-hidden ${image.className || ''}`}
                         onClick={() => openFullscreen(image.src)}
                     >
                         <Image
@@ -100,7 +111,7 @@ const Page = () => {
                     onClick={closeFullscreen}
                 >
                     <div
-                        className="max-w-fit max-h-fit relative bg-white rounded-2xl p-4 shadow-2xl flex items-center justify-center"
+                        className="max-w-[100vw] max-h-fit relative bg-white rounded-2xl p-4 shadow-2xl flex items-center justify-center"
                         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the image container
                     >
                         <div className="relative w-full h-full max-h-[70vh]">
@@ -109,12 +120,12 @@ const Page = () => {
                                 alt="Fullscreen image"
                                 width={800}
                                 height={800}
-                                className="max-w-fit max-h-[70vh] object-contain rounded-xl"
+                                className="w-full h-full max-w-full max-h-[70vh] object-contain rounded-xl"
                             />
                         </div>
                         <button
                             onClick={closeFullscreen}
-                            className="absolute top-4 right-4 text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-xl px-4 py-2 transition-colors z-10"
+                            className="absolute top-4 right-4 text-gray-600 bg-gray-100/85 hover:bg-gray-200 rounded-xl px-4 py-2 transition-colors z-10"
                         >
                             Close
                         </button>
