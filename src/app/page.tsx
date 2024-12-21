@@ -66,7 +66,7 @@ export default function Home() {
           }}
           className="blob hidden lg:block absolute top-[350px] -z-[9] lg:h-[843px] lg:w-[1097px] max-h-[843px] max-w-[1097px]"
         >
-          <Image src="/blob.svg" alt="blob" width={1000} height={840} />
+          <Image src="/Blob.svg" alt="blob" width={1000} height={840} />
         </motion.div>
 
         <motion.div className="hero-text w-full flex flex-col md:flex-row items-center md:items-end gap-2 md:gap-5 md:justify-between mt-5 md:mt-20 mb-5 md:mb-10 ">
